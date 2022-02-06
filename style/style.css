@@ -65,7 +65,7 @@ header a {
 
 .title-playlist {
     font-weight: 800;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -78,7 +78,7 @@ header a {
 
 .create-playlist {
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .playlist-list {
@@ -101,9 +101,10 @@ header a {
     margin-bottom: 60px;
 }
     
-hr {
+header hr {
+    border: none;
+    height: 1px;
     background-color: white;
-    font-size: 11px;
     margin-left: 20px;
 }
 
@@ -165,23 +166,26 @@ header a:hover {
     font-size: 14px;
 }
 
-/*Corpo principale del MAIN*/
+/*CORPO PRINCIPALE DEL MAIN*/
 
 main {
+    max-width: 83.7vw;
     height: 100vh;
     background-color: rgba(20,25,34,255);
     overflow: auto;
 }
 
+/*Main list*/
+
 .container-main {
     margin-top: 7rem;
-
+    margin-left: 20px;
+    margin-right: 25px;
 }
 
 .container-main-list {
     display: flex;
     justify-content: center;
-
 }
 
 .main-list {
@@ -200,13 +204,45 @@ main {
     color: white;
 }
 
-li hr {
+.main-list li hr {
     height: 2px;
     border: none;
     margin-top: 5px;
+    margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(4, 255, 4);
 }
+
+/*Recently Played*/
+
+h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+.container-films {
+    margin-top: 20px;
+    display: flex;
+}
+
+.recently-played {
+    text-align: center;
+    line-height: 1.8em;
+}
+
+.recently-played img {
+    width: 90%;
+    
+}
+
+.subtitle {
+    color: grey;
+}
+
+
+
+
+
 
 
 
