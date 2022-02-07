@@ -248,7 +248,8 @@ h3 {
 }
 
 /*Recently played Hover*/
-.fa-play-circle {
+
+main .fa-play-circle {
     position: absolute;
     font-size: 60px;
     top: 55px;
@@ -326,7 +327,9 @@ footer {
     background-color: rgba(40,40,40,255);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 1.2em;
+
 }
 
 /*Funzioni di sinistra*/
@@ -347,6 +350,16 @@ footer {
     vertical-align: middle;
 }
 
+.subtitle-name a {
+    color: grey;
+    text-decoration: none;
+}
+
+.subtitle-name a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .heart-folder {
     margin-left: 35px;
 }
@@ -364,4 +377,72 @@ footer a:hover {
 }
 
 /*Funzioni centrali*/
+
+.center-functions a {
+    color: white;
+}
+
+.center-functions {
+    text-align: center;
+}
+
+.center-functions i {
+    font-size: 15px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+footer .fa-play-circle {
+    font-size: 28px;
+    transition: all 0.2s;
+}
+
+footer .fa-play-circle:hover {
+    font-size: 30px;
+}
+
+.bottom-center-functions {
+    display: flex;
+    align-items: center;
+}
+
+.time-bar {
+    width: 400px;
+    height: 4px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.top-center-functions {
+    margin-bottom: 10px;
+}
+
+.current-time-bar {
+    width: 100px;
+    height: 4px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+}
+
+.time-circle {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 98px;
+}
+
+.bottom-center-functions:hover .current-time-bar {
+    background-color: rgb(25, 233, 25);
+}
+
+.bottom-center-functions:hover .time-circle {
+    background-color: rgb(25, 233, 25);
+}
+
 
