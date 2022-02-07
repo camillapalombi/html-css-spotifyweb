@@ -337,6 +337,7 @@ footer {
 .left-functions {
     display: flex;
     align-items: center;
+    width: 12%;
 }
 
 .left-functions img {
@@ -384,6 +385,10 @@ footer a:hover {
 
 .center-functions {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
 }
 
 .center-functions i {
@@ -404,6 +409,8 @@ footer .fa-play-circle:hover {
 .bottom-center-functions {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .time-bar {
@@ -417,7 +424,11 @@ footer .fa-play-circle:hover {
 }
 
 .top-center-functions {
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .current-time-bar {
@@ -430,11 +441,11 @@ footer .fa-play-circle:hover {
 .time-circle {
     width: 18px;
     height: 18px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     position: absolute;
     top: -7px;
-    left: 98px;
+    left: 95px;
 }
 
 .bottom-center-functions:hover .current-time-bar {
@@ -442,7 +453,58 @@ footer .fa-play-circle:hover {
 }
 
 .bottom-center-functions:hover .time-circle {
-    background-color: rgb(25, 233, 25);
+    background-color: white;
 }
 
+/*Funzioni di destra*/
+
+.right-functions {
+    display: flex;
+    justify-content: center;
+    width: 12%;
+}
+
+.right-functions a {
+    color: white;
+}
+
+.right-functions i {
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.volume-bar {
+    width: 100px;
+    height: 4px;
+    background-color: grey;
+    border-radius: 10px;
+    vertical-align: bottom;
+    margin-top: 5px;
+    position: relative;
+}
+
+.current-volume-bar {
+    width: 40px;
+    height: 4px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+}
+
+.volume-circle {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px;
+    left: 30px;
+}
+
+.volume-bar:hover .current-volume-bar {
+    background-color: rgb(8, 245, 8);
+}
+
+.volume-bar:hover .volume-circle {
+    background-color: white;
+}
 
