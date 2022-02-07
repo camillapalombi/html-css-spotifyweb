@@ -177,7 +177,6 @@ header a:hover {
 /*CORPO PRINCIPALE DEL MAIN*/
 
 main {
-    max-width: 83.7vw;
     height: 100vh;
     background-color: rgba(20,25,34,255);
     overflow: auto;
@@ -197,10 +196,10 @@ main {
 }
 
 .main-list {
-    width: 600px;
     list-style: none;
     display: flex;
     justify-content: space-between;
+    width: 600px;
 }
 
 .main-list a {
@@ -232,14 +231,11 @@ h1 {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 .recently-played {
     width: 15%;
     line-height: 1.8em;
-    display: flex;
-    flex-direction: column;
     position: relative;
 }
 
@@ -338,8 +334,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.2em;
-
 }
+
 
 /*Funzioni di sinistra*/
 
@@ -385,7 +381,11 @@ footer a:hover {
     color: white;
 }
 
+
+
 /*Funzioni centrali*/
+
+/*Top*/
 
 .center-functions a {
     color: white;
@@ -405,6 +405,14 @@ footer a:hover {
     vertical-align: middle;
 }
 
+.top-center-functions {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 footer .fa-play-circle {
     font-size: 28px;
     transition: all 0.2s;
@@ -414,6 +422,7 @@ footer .fa-play-circle:hover {
     font-size: 30px;
 }
 
+/*Bottom*/
 .bottom-center-functions {
     display: flex;
     align-items: center;
@@ -429,14 +438,6 @@ footer .fa-play-circle:hover {
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
-}
-
-.top-center-functions {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .current-time-bar {
@@ -463,6 +464,8 @@ footer .fa-play-circle:hover {
 .bottom-center-functions:hover .time-circle {
     background-color: white;
 }
+
+
 
 /*Funzioni di destra*/
 
@@ -515,3 +518,57 @@ footer .fa-play-circle:hover {
     background-color: white;
 }
 
+
+
+
+/*MEDIA QUERY*/
+
+/* Media Query schermo M (1100px) */
+
+@media all and (max-width:1100px) and (min-width:700px) {
+
+    .recently-played {
+        width: 150px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .container-films {
+        min-width: 600px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .accurate-tips img {
+        width: 150px;
+    }
+
+    .container-create-for {
+        width: 350px;
+        justify-content: flex-start;
+    }
+
+    .popular-artist img {
+        width: 150px;
+    }
+
+    .container-popular-artists {
+        width: 330px;
+        justify-content: flex-start;
+    }
+
+    .popular-artist {
+        width: 50%;
+    }
+
+    .main-list {
+        width: 900px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-list li {
+        margin-right: 40px;
+    }
+
+}
