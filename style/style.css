@@ -524,7 +524,7 @@ footer .fa-play-circle:hover {
 
 /*MEDIA QUERY*/
 
-/* Media Query schermo M (1100px) */
+/* Media Query schermo M (992px) */
 
 @media all and (max-width:992px) and (min-width:768px) {
 
@@ -557,7 +557,7 @@ footer .fa-play-circle:hover {
         width: 100%;
         justify-content: flex-start;
     }
-
+    
     .main-list {
         width: 100%;
         flex-wrap: wrap;
@@ -572,4 +572,47 @@ footer .fa-play-circle:hover {
 
 
 
-/* Media Query schermo S (700px) */
+/* Media Query schermo S (768px) */
+
+@media all and (max-width: 768px) and (min-width: 576px) {
+
+    .recently-played {
+        width: 45%;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .container-films {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .accurate-tips {
+        width: 45%;
+    }
+
+    .container-create-for {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .popular-artist {
+        width: 45%;
+    }
+
+    .container-popular-artists {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+
+
+
+
+
+
+
+
+
+}
