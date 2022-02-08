@@ -18,6 +18,7 @@ header::after {
     display: table;
     clear: both;
 }
+
 header {
     min-width: 250px;
     height: 100vh;
@@ -26,7 +27,7 @@ header {
 }
 
 .header-container {
-    height: 90%;
+    height: 89%;
     padding-top: 10px;
     margin-right: 30px;
     display: flex;
@@ -54,6 +55,10 @@ header {
 .header-icon {
     width: 25px;
     vertical-align: bottom;
+}
+
+.home {
+    border-left: 2px solid rgb(3, 248, 3);
 }
 
 header a {
@@ -96,7 +101,7 @@ header a {
 .playlist-list li a {
     color: grey;
     text-decoration: none;
-    line-height: 2.8em;
+    line-height: 2.4em;
 }
 
 .bottom-header {
@@ -131,9 +136,6 @@ header hr {
     padding-left: 20px;
 }
 
-.home {
-    border-left: 4px solid rgb(3, 248, 3);
-}
 
 /*Header hover*/
 
@@ -155,8 +157,8 @@ header a:hover {
     top: 0;
     right: 0;
     z-index: 11;
-    
 }
+
 .link-upgrade {
     position: absolute;
     top: 15px;
@@ -171,8 +173,9 @@ header a:hover {
 }
 
 .link-upgrade:hover {
-    font-size: 14px;
+    transform: scale(1.1);
 }
+
 
 /*CORPO PRINCIPALE DEL MAIN*/
 
@@ -385,7 +388,6 @@ footer a:hover {
 /*Funzioni centrali*/
 
 /*Top*/
-
 .center-functions a {
     color: white;
 }
