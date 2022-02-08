@@ -13,6 +13,7 @@ html {
 
 
 /*HEADER*/
+
 header::after {
     content: '';
     display: table;
@@ -161,7 +162,7 @@ header a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 11;
+    z-index: 2;
 }
 
 .link-upgrade {
@@ -301,6 +302,12 @@ main .fa-play-circle {
 
 .accurate-tips img {
     width: 100%;
+    transition: all 0.5s;
+}
+
+.container-create-for img:hover {
+    filter: sepia(0.5);
+    border-radius: 10px;
 }
 
 
@@ -322,6 +329,12 @@ main .fa-play-circle {
 .popular-artist img {
     width: 100%;
     border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.popular-artist img:hover {
+    filter: sepia(0.5);
+    border-radius: 0;
 }
 
 
@@ -333,7 +346,7 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 12;
     height: 6rem;
     width: 100%;
     background-color: rgba(40,40,40,255);
@@ -388,11 +401,21 @@ footer a:hover {
     color: white;
 }
 
+.red-heart {
+    transition: all 0.4s;
+}
+
+.red-heart:hover {
+    color: red;
+    font-size: 18px;
+}
+
 
 
 /*Funzioni centrali*/
 
 /*Top*/
+
 .center-functions a {
     color: white;
 }
@@ -428,7 +451,9 @@ footer .fa-play-circle:hover {
     font-size: 30px;
 }
 
+
 /*Bottom*/
+
 .bottom-center-functions {
     display: flex;
     align-items: center;
