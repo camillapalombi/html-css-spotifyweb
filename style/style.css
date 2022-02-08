@@ -266,7 +266,7 @@ main .fa-play-circle {
     position: absolute;
     font-size: 60px;
     top: 55px;
-    left: 60px;
+    left: 65px;
     color: transparent;
 }
 
@@ -573,6 +573,10 @@ footer .fa-play-circle:hover {
         margin-right: 30px;
     }
 
+    main .fa-play-circle {
+        font-size: 40px;
+    }
+
 }
 
 
@@ -746,7 +750,41 @@ footer .fa-play-circle:hover {
         margin-right: 30px;
     }
 
+    /*MODIFICHE FOOTER*/
+
     footer {
-        min-width: 558px;
+        min-width: 494px;
     }
+
+    .left-functions img {
+        width: 30px;
+    }
+
+    .center-functions i {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    .heart-folder {
+        margin-left: 0;
+    }
+
+    .right-functions i {
+        margin-right: 8px;
+        font-size: 8px;
+    }
+
+    .current-time , .total-time {
+        font-size: 10px;
+    }
+
+    .time-bar {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .volume-bar {
+        width: 60px;
+    }
+
 }
