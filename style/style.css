@@ -526,50 +526,46 @@ footer .fa-play-circle:hover {
 
 /* Media Query schermo M (1100px) */
 
-@media all and (max-width:1100px) and (min-width:700px) {
+@media all and (max-width:992px) and (min-width:768px) {
 
     .recently-played {
-        width: 150px;
+        width: 20%;
         margin-right: 15px;
         margin-top: 15px;
     }
 
     .container-films {
-        min-width: 600px;
+        width: 100%;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
 
-    .accurate-tips img {
-        width: 150px;
+    .accurate-tips {
+        width: 20%;
     }
 
     .container-create-for {
-        width: 1000px;
-        justify-content: flex-start;
-    }
-
-    .popular-artist img {
-        width: 150px;
-    }
-
-    .container-popular-artists {
-        width: 350px;
+        width: 100%;
         justify-content: flex-start;
     }
 
     .popular-artist {
-        width: 50%;
+        width: 20%;
+    }
+
+    .container-popular-artists {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .main-list {
-        width: 900px;
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .main-list li {
-        margin-right: 40px;
+        margin-right: 45px;
     }
 
 }
